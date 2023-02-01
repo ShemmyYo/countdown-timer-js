@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 
 
+/* --------------------
+    General Def
+--------------------- */
+
 *, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-family: 'Syncopate', sans-serif;
     background-image: url(/assets/other/time.jpg);
     background-size: cover;
@@ -16,6 +22,93 @@ body {
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 150%;
+    text-align: center;
+    margin: 5% 0;
+}
+.countdown-container {
+    width: 100vw;
+    height: 70vh;
+}
+
+.inner-border {
+    width: 80%;
+    margin: 0 5%;
+    max-width: 700px;
+    display: grid;
+
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5% 0;
+
+}
+
+.big-text{ 
+    font-weight: bold;
+    font-size: 1rem;
     
 }
+
+.inner-border span {
+    font-weight: bold;
+    font-size: 0.5rem;
+    
+}
+
+.days-count,
+.hours-count,
+.minutes-count,
+.seconds-count {
+    min-width: 60px;
+}
+
+@media only screen and (min-width: 600px) {
+   
+    h1 {
+        font-size: 200%;
+        text-align: center;
+        margin: 5% 0;
+    }
+
+    .inner-border {
+        width: 90%;
+        max-width: 600px;
+
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(4, auto);
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        text-align: center;
+    
+        background-color: rgba(219, 219, 219, 0.575);
+        border: 1px solid rgba(141, 141, 141, 0.767);
+        border-radius: 4px;
+
+        padding: 5% 0;
+        margin: 0 auto;
+        transform: translateX(-50deg);
+    }
+
+    .big-text {
+        font-weight: bold;
+        font-size: 2rem;  
+    }
+    
+    .inner-border span {
+        font-weight: bold;
+        font-size: 0.7rem; 
+    }
+    
+  }
