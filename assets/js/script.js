@@ -28,6 +28,11 @@ function formatTime(time) {
     return time < 10 ? `0${time}` : time;
 }
 
+document.getElementById("buttonId").onclick = function() {
+    var date = new Date();
+    document.getElementById("inputId").value = date.toString();
+};
+
 countdown()
 
 setInterval(countdown, 1000);
