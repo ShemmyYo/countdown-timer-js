@@ -76,20 +76,26 @@ h1 {
 }
 
 .event-button {
+    font-family: 'Syncopate', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    transition: all 0.2s ease-out;
+}
+
+.event-button:hover {
+    background-color: rgba(219, 219, 219, 0.575);
+    transform: scale(1.1);
+    
 }
 
 .big-text{ 
     font-weight: bold;
     font-size: 1rem;
-    
 }
 
 .inner-border span {
     font-weight: bold;
     font-size: 0.5rem;
-    
 }
 
 .days-count,
@@ -99,6 +105,9 @@ h1 {
     min-width: 60px;
 }
 
+/* --------------------
+    Media 
+--------------------- */
 @media only screen and (min-width: 600px) {
    
     h1 {
