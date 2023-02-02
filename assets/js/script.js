@@ -1,9 +1,11 @@
-const eventName = "1 Jan 2024";
+let eventName = "2024-Jan-1";
 
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
+const eventEl = document.getElementById("event");
+// const eventDateEl = document.getElementById("button");
 
 function countdown() {
     let eventDate = new Date(eventName);
@@ -28,9 +30,18 @@ function formatTime(time) {
     return time < 10 ? `0${time}` : time;
 }
 
-document.getElementById("buttonId").onclick = function() {
-    var date = new Date();
-    document.getElementById("inputId").value = date.toString();
+
+function eventDate() {
+    eventDate = eventDateEl.value = eventDate.toString();
+    console.log(eventDate);
+    return eventDate
+    
+};
+
+document.getElementById("eventButton").onclick = function() {
+    let eventN = document.getElementById("eventName").value;
+    eventName = document.getElementById("eventDate").value;
+    eventEl.innerHTML = `To ${eventN} (${eventName})`;
 };
 
 countdown()

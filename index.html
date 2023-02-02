@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <h1>Timer Event</h1>
+    <h1 id="event">Timer Event</h1>
     <div class="countdown-container">
         <div class="inner-border">
             <div class="days-count">
@@ -33,10 +33,9 @@
             </div>
         </div>
         <form class="event-container">
-            <input name="event-date" id="eventDate" size="20">
-            <input type="button" class="button" value="set new Event date">
-            <input name="event-name" id="eventName" size="20">
-            <input type="button" class="button" value="what's the new Event?">
+            <input type="date" name="event-date" id="eventDate" size="20" placeholder="1 Jan 2023" required>
+            <input type="text" name="event-name" id="eventName" size="20" placeholder="Event Name" required>
+            <input type="button" id="eventButton" value="set">
         </form>
     </div>
 

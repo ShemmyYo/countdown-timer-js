@@ -55,7 +55,7 @@ h1 {
 }
 
 .event-container {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
 }
 
 .event-container .button {
